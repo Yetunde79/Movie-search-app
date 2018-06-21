@@ -1,0 +1,17 @@
+<%include partials/header.ejs%>
+
+
+<div class="container centered">
+    <h1>Search for a movie</h1>
+    <form action="/request" method="GET">
+        <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Search for movie" aria-label="Submit" aria-describedby="basic-addon2" name="search">
+      <div class="input-group-append">
+        <input class="btn btn-outline-secondary" type="submit">
+      </div>
+    </div>
+    
+    </form>
+</div>
+
+<%include partials/footer.ejs%>
