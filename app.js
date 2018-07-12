@@ -14,7 +14,7 @@ app.get("/", function(req,res){
 
 app.get("/request", function(req, res){
     var query = encodeURIComponent(req.query.search);
-    var url = "http://www.omdbapi.com/?s=" + query + "&apikey=thewdb";
+    var url = "http://www.omdbapi.com/?s=" + query + "&apikey=****";
 
     request(url, function(error, response, body){
         var data = JSON.parse(body);
